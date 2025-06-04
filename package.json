@@ -1,0 +1,53 @@
+{
+  "name": "kiosk-application",
+  "version": "1.0.0",
+  "description": "Interactive Kiosk Application - React Native + Strapi CMS",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm start",
+    "dev:server": "cd server && npm run develop",
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "install:all": "npm install && npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "lint": "npm run lint:client && npm run lint:server",
+    "lint:client": "cd client && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "clean": "npm run clean:client && npm run clean:server",
+    "clean:client": "cd client && rm -rf node_modules .expo dist",
+    "clean:server": "cd server && rm -rf node_modules dist .strapi",
+    "docker:up": "cd server && docker-compose up -d",
+    "docker:down": "cd server && docker-compose down",
+    "setup": "npm run install:all && npm run dev:server"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "kiosk",
+    "react-native",
+    "strapi",
+    "cms",
+    "touchscreen",
+    "expo",
+    "typescript",
+    "i18n"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kiosk-application.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

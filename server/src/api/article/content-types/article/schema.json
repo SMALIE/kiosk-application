@@ -1,0 +1,21 @@
+{
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "pluginOptions": {
+    "i18n": { "localized": true }
+  },
+  "attributes": {
+    "title": { "type": "string", "pluginOptions": { "i18n": { "localized": true } } },
+    "date": { "type": "date" },
+    "image": { "type": "string" },
+    "content": { "type": "text", "pluginOptions": { "i18n": { "localized": true } } },
+    "url": { "type": "string", "regex": "^(https?:\\/\\/).+" },
+    "category": { "type": "integer" },
+
+    "scraped": { "type": "boolean", "default": false }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_social-links",
+  "info": {
+    "displayName": "Social link",
+    "icon": "link"
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "required": true
+    },
+    "handle": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "regex": "^(https?:\\/\\/).+"
+    }
+  }
+}

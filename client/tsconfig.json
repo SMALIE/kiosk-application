@@ -1,0 +1,50 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "paths": {
+      "@ui/*": ["./components/ui/*"],
+      "@components/*": ["./components/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@utils/*": ["./utils/*"],
+      "@config/*": ["./config/*"],
+      "@assets/*": ["./assets/*"],
+      "@lib/*": ["./lib/*"],
+      "@providers/*": ["./providers/*"],
+      "@models/*": ["./types/*"],
+      "@constants/*": ["./constants/*"],
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", ".expo/web", ".expo/web/**/*", "android", "ios", "scripts", "app-example"],
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "providers/**/*.ts",
+    "providers/**/*.tsx",
+    "hooks/**/*.ts",
+    "hooks/**/*.tsx",
+    "utils/**/*.ts",
+    "utils/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "types/**/*.ts",
+    "types/**/*.tsx",
+    "constants/**/*.ts",
+    "constants/**/*.tsx",
+    "config/**/*.ts",
+    "config/**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "metro.config.js",
+    "eslint.config.ts"
+  ]
+}

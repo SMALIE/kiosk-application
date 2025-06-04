@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "customField",
+      "customField": "plugin::strapi-plugin-iconhub.iconhub"
+    },
+    "label": {
+      "type": "string"
+    },
+    "targetPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

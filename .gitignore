@@ -1,0 +1,93 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Dependencies
+node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Environment variables
+.env
+.env*.local
+
+# Build outputs
+dist/
+build/
+web-build/
+
+# Platform-specific
+# Android
+android/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# iOS  
+ios/
+
+# Expo
+.expo/
+expo-env.d.ts
+
+# Metro
+.metro-health-check*
+
+# TypeScript
+*.tsbuildinfo
+.eslintcache
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+.tmp
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDEs
+.idea/
+.vscode/
+nbproject/
+ssl/
+*#
+
+# Package managers
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Strapi specific
+data/
+license.txt
+exports/
+.strapi/
+.strapi-updater.json
+.strapi-cloud.json
+
+# Docker
+docker-compose.override.yml
+
+# Large media files (use Git LFS if needed)
+*.mp4
+*.mov
+*.avi
+
+# Application specific
+app-example/
+public/uploads/*.mp4
